@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    background: -webkit-linear-gradient(to right, #42a6e8, #8E2DE2);
+    background: linear-gradient(to right, #42a6e0, #8E2DE2);
+}
+.rapper{
+    display: inline-block;
+    width: 30%;
+    margin-top: 200px;
+    margin-left: 550px;
+    background: rgb(233, 149, 212);
+    border-radius: 7px;
+    box-shadow: 4px 4px 4px;
+    position: relative;
+}
+.input-task{
+    height:52px;
+    padding:25px;
+    position:relative;
+    
+}
+.input-task input{
+ background-color: rgb(93, 186, 243);
+ height:100%;
+ width:100%;
+ font-size:18px;
+ outline:none;
+ border: none;
+ text-align: center;
+ border-radius:5px;
+ box-shadow: 2px 2px 2px inset;
+}
+hr {
+   margin-left: 45px;
+   border-top: 2px solid rgb(37, 10, 155);
+   border-bottom: 0;
+   width:80%;
+}
+.input-task input::placeholder{
+    color: rgb(0, 0, 0);
+    font-family: Poppins,sans-serif;
+}
+.petrols,li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.petrols{
+    padding: 18px 20px;
+}
+
+.petrols .clear{
+    display: inline-block;
+    margin-left:79%;
+    outline: none;
+    border: none;
+    color: rgb(39, 40, 40);
+    border-radius: 4px;
+    padding: 7px 13px;
+    box-shadow: 2px 3px 5px rgba(71, 32, 32, 0.15);
+    cursor: pointer;
+    font-size: 16px;
+    background: rgb(231, 235, 236);
+}
+.taskBox{
+    margin: 20px 25px;
+}
+.taskBox .alltasks{
+    list-style: none;
+    font-size: 17px;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgb(67, 88, 244);
+}
+.taskBox .alltasks:last-child{
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.alltasks label{
+    display: flex;
+}
+.alltasks label p.checked{
+    text-decoration: line-through;
+}
+.alltasks label input{
+    margin-top: 0;
+    margin-right: 12px;
+}
+.alltasks .setting{
+    cursor: pointer;
+    position: relative;
+}
+.setting .taskmenu{
+    position: absolute;
+    background: #fff;
+    padding: 5px 0;
+    right: -5px;
+    bottom: -60px;
+    z-index: 2;
+    transform: scale(0);
+    transition: transform 0.2s ease;
+    transform-origin: top right;
+    border-radius: 15px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+}
+.setting .taskmenu.show{
+    transform: scale(1);
+}
+.taskmenu li{
+    height: 25px;
+    font-size: 16px;
+    margin-bottom: 2px;
+    padding: 5px 10px;
+    justify-content: flex-start;
+}
+.taskmenu li:hover{
+    background: #f5f4f5;
+    border-radius: 8px;
+}
+.taskmenu li:last-child{
+    margin-bottom: 0;
+}
+.taskmenu li i{
+    padding-right: 8px;
+}
+.createdBy{
+    margin-top: 200px;
+    position: absolute;
+    display: inline-block;
+    color: white;
+    left: 43%;
+    }
