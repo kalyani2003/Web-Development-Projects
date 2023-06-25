@@ -1,3 +1,3 @@
-# LGMVIP-Web Task- 4
+Calculator-
 
-In this project i made a calculator using html, css, js.
+In this project i have used Html,Css and JavaScript.
